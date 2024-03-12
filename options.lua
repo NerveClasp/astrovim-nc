@@ -1,5 +1,15 @@
-vim.opt.colorcolumn = "80"
-vim.opt.cursorcolumn = true
-vim.opt.cursorline = true
-vim.opt.cursorlineopt = 'screenline'
-vim.o.updatetime = 60
+local opt = vim.opt
+
+opt.colorcolumn = "80"
+opt.cursorcolumn = true
+opt.cursorline = true
+opt.cursorlineopt = "screenline"
+opt.updatetime = 250
+
+opt.list = true
+opt.listchars = {
+  -- eol = "↲",
+  tab = "▸ ",
+  trail = "·",
+  nbsp = "␣",
+}
