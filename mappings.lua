@@ -102,5 +102,6 @@ maps.n["|"] = { "<cmd>vsplit<cr>", desc = "Vertical split" }
 maps.n["<space>sg"] = { "<cmd>Telescope highlights<cr>", desc = "Highlight groups" }
 
 maps.n["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" }
+maps.n["<C-s>"] = false
 
 return maps
