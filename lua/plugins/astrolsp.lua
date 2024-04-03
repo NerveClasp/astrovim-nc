@@ -1,5 +1,3 @@
--- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
-
 -- AstroLSP allows you to customize the features in AstroNvim's LSP configuration engine
 -- Configuration documentation can be found with `:h astrolsp`
 -- NOTE: We highly recommend setting up the Lua Language Server (`:LspInstall lua_ls`)
@@ -45,6 +43,23 @@ return {
     -- customize language server configuration options passed to `lspconfig`
     ---@diagnostic disable: missing-fields
     config = {
+      arduino_language_server = {
+        cmd = {
+          "arduino-language-server",
+          "-cli-config",
+          "/home/romka/.arduino15/arduino-cli.yaml",
+          "-cli",
+          "/usr/bin/arduino-cli",
+          "-clangd",
+          "/home/romka/.local/share/nvim/mason/bin/clangd",
+          "-fqbn",
+          "esp8266:esp8266:d1_mini_clone",
+        },
+      },
+      graphql = {
+        cmd = { "graphql-lsp", "server", "-m", "stream" },
+        filetypes = { "graphql", "javascript", "javascriptreact", "typescript", "typescriptreact", "svelte" },
+      },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached

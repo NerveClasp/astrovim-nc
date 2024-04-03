@@ -1,3 +1,4 @@
+-- if true then return {} end
 -- Customize Mason plugins
 
 ---@type LazySpec
@@ -42,7 +43,7 @@ return {
         "gofumpt",
         "goimports",
         "gopls",
-        "jsonls",
+        -- "jsonls",
         "jsonlint",
         "luacheck",
         "prettierd",
@@ -50,7 +51,7 @@ return {
         "go-debug-adapter",
         "js-debug-adapter",
         "shellcheck",
-        "shellgarden",
+        -- "shellgarden",
         "stylelint",
         -- add more arguments for adding more null-ls sources
       })

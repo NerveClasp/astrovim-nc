@@ -17,14 +17,15 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.completion.copilot-lua" },
   { -- further customize the options set by the community
     "zbirenbaum/copilot.lua",
     opts = {
       suggestion = {
         keymap = {
           accept = "<C-y>", -- TJ made me do this
-          -- accept_word = false,
-          -- accept_line = false,
+          accept_word = false,
+          accept_line = false,
           next = "<C-.>",
           prev = "<C-,>",
           dismiss = "<C/>",
@@ -34,17 +35,17 @@ return {
   },
   { import = "astrocommunity.bars-and-lines.vim-illuminate" },
   { import = "astrocommunity.bars-and-lines.smartcolumn-nvim" },
-  {
-    "m4xshen/smartcolumn.nvim",
-    opts = {
-      colorcolumn = 80,
-      disabled_filetypes = { "help" },
-    },
-  },
+  -- {
+  --   "m4xshen/smartcolumn.nvim",
+  --   opts = {
+  --     colorcolumn = 80,
+  --     disabled_filetypes = { "help" },
+  --   },
+  -- },
   { import = "astrocommunity.git.blame-nvim" },
   -- { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-  { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
+  -- { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
   { import = "astrocommunity.note-taking.obsidian-nvim" },
 }
