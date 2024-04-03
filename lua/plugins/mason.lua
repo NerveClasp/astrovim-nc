@@ -39,7 +39,6 @@ return {
         "codelldb",
         "commitlint",
         "delve",
-        "eslint_d",
         "gofumpt",
         "goimports",
         "gopls",
