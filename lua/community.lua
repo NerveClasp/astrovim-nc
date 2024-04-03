@@ -48,4 +48,5 @@ return {
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
   { import = "astrocommunity.note-taking.obsidian-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
 }

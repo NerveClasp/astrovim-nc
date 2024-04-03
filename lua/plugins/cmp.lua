@@ -28,7 +28,7 @@ return {
       local cmp = require "cmp"
       local snip_status_ok, luasnip = pcall(require, "luasnip")
       local lspkind_status_ok, lspkind = pcall(require, "lspkind")
-      local utils = require "astronvim.utils"
+      local utils = require "astrocore"
       if not snip_status_ok then return end
       local border_opts = {
         border = "rounded",

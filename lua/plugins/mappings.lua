@@ -41,7 +41,7 @@ maps.t["<a-2>"] = maps.n["<a-2>"]
 
 -- Search
 maps.n["<leader>s"] = {
-  desc = get_icon("Search", 1, true) .. "Search",
+  desc = get_icon("Search", 2, true) .. "Search",
 }
 maps.n["<leader>st"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
 maps.n["<leader>sT"] = {
