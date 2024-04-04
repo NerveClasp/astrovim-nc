@@ -60,6 +60,21 @@ return {
         cmd = { "graphql-lsp", "server", "-m", "stream" },
         filetypes = { "graphql", "javascript", "javascriptreact", "typescript", "typescriptreact", "svelte" },
       },
+      ["lua_ls"] = {
+        settings = {
+          Lua = {
+            diagnostics = {
+              globals = { "vim", "use" },
+            },
+            workspace = {
+              library = {
+                [vim.fn.expand "$VIMRUNTIME/lua"] = true,
+                [vim.fn.expand "$VIMRUNTIME/lua/vim/lsp"] = true,
+              },
+            },
+          },
+        },
+      },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached
