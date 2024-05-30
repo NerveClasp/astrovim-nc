@@ -16,7 +16,7 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.svelte" },
-  { import = "astrocommunity.pack.typescript" },
+  -- { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.completion.copilot-lua" },
   { -- further customize the options set by the community
     "zbirenbaum/copilot.lua",
@@ -46,7 +46,13 @@ return {
   -- { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-  -- { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
+  { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
+  {
+    "m4xshen/hardtime.nvim",
+    opts = {
+      disable_mouse = false,
+    },
+  },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
 }
