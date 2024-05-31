@@ -55,4 +55,8 @@ return {
   },
   { import = "astrocommunity.note-taking.obsidian-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
+  { import = "astrocommunity.motion.mini-ai" },
+  { import = "astrocommunity.motion.mini-bracketed" },
+  { import = "astrocommunity.motion.mini-surround" },
+  { import = "astrocommunity.motion.nvim-spider" },
 }
