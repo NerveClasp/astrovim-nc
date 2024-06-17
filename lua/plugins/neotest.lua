@@ -7,9 +7,9 @@ return {
       "antoinemadec/FixCursorHold.nvim",
       "nvim-treesitter/nvim-treesitter",
       "marilari88/neotest-vitest",
-      "nvim-neotest/neotest-plenary",
-      "nvim-neotest/neotest-go",
-      "mrcjkb/rustaceanvim",
+      -- "nvim-neotest/neotest-plenary",
+      -- "nvim-neotest/neotest-go",
+      -- "mrcjkb/rustaceanvim",
     },
     keys = {
       { "<leader>lt", function() require("neotest").run.run() end, desc = "Run Neotest" },
@@ -20,8 +20,8 @@ return {
       neotest.setup {
         adapters = {
           require "neotest-vitest",
-          require "neotest-go",
-          require "rustaceanvim",
+          -- require "neotest-go",
+          -- require "rustaceanvim",
           -- require("neotest-plenary").setup {
           -- this is my standard location for minimal vim rc
           -- in all my projects

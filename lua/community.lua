@@ -16,7 +16,7 @@ return {
   { import = "astrocommunity.pack.html-css" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.svelte" },
-  -- { import = "astrocommunity.pack.typescript" },
+  { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.completion.copilot-lua" },
   { -- further customize the options set by the community
     "zbirenbaum/copilot.lua",
