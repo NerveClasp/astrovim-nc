@@ -23,7 +23,6 @@ return {
         "svelte",
         "tailwindcss",
         "taplo",
-        "tsserver",
         -- add more arguments for adding more language servers
       })
     end,

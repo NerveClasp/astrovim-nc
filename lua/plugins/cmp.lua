@@ -10,6 +10,10 @@ return {
       local cmp = require "cmp"
       local ls = require "luasnip"
 
+      cmp.config.formatting = {
+        format = require("tailwindcss-colorizer-cmp").formatter,
+      }
+
       opts.mapping["<C-y>"] = cmp.mapping.confirm { select = false } -- TJ made me do this
       -- Think of <c-l> as moving to the right of your snippet expansion.
       --  So if you have a snippet that's like:

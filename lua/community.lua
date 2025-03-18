@@ -46,7 +46,7 @@ return {
   -- { import = "astrocommunity.indent.indent-rainbowline" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
-  { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
+  -- { import = "astrocommunity.workflow.hardtime-nvim" }, -- this one shows all those messages about arrows and many `j`s
   {
     "m4xshen/hardtime.nvim",
     opts = {

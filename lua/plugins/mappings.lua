@@ -7,6 +7,8 @@ local get_icon = utils.get_icon
 -- automatically pick-up stored data by this setting.)
 local maps = { i = {}, n = {}, v = {}, t = {} }
 
+maps.n["<leader>r"] = { "<cmd>LspRestart svelte<cr>", desc = "Restart Svelte LSP" }
+
 maps.v["J"] = { ":m '>+1<CR>gv=gv", desc = "Move line down" }
 maps.v["K"] = { ":m '<-2<CR>gv=gv", desc = "Move line up" }
 
@@ -27,7 +29,7 @@ maps.n["<A-d>"] = { [["_d]], desc = "Delete" }
 maps.v["<A-d>"] = { [["_d]], desc = "Delete" }
 
 -- Terminal
-maps.n["<c-_>"] = { "<cmd>3ToggleTerm<cr>", desc = "Toggle terminal" }
+maps.n["<c-_>"] = { "<cmd>3ToggleTerm direction=float<cr>", desc = "Toggle terminal" }
 maps.t["<c-_>"] = maps.n["<c-_>"]
 maps.n["<C-'>"] = maps.n["<c-_>"] -- requires terminal that supports binding <C-'>
 maps.t["<C-'>"] = maps.n["<c-_>"] -- requires terminal that supports binding <C-'>
