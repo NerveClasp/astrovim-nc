@@ -59,8 +59,7 @@ maps.n["<leader>ss"] =
 maps.n["<leader>fs"] =
   { function() require("telescope.builtin").colorscheme { enable_preview = true } end, desc = "Find themes" }
 
-maps.n["<leader>ft"] = { function() require("telescope.builtin").live_grep() end, desc = "Find words" }
-maps.n["<leader>fT"] = {
+maps.n["<leader>fa"] = {
   function()
     require("telescope.builtin").live_grep {
       additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,

@@ -7,6 +7,16 @@ local fmt = require("luasnip.extras.fmt").fmt
 
 ls.add_snippets("svelte", {
   s(
+    "ssc",
+    fmt(
+      [[
+      <script lang="ts">
+        {}
+      </script>{}]],
+      { i(1), i(0) }
+    )
+  ),
+  s(
     "sts",
     fmt(
       [[
