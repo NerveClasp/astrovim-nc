@@ -27,11 +27,12 @@ return {
         "rust_analyzer",
         "svelte",
         "tailwindcss",
-        "taplo",
+        -- "taplo",
         -- add more arguments for adding more language servers
       })
       -- Remove "emmet_ls" if it exists
       remove_item(opts.ensure_installed, "emmet_ls")
+      remove_item(opts.ensure_installed, "taplo")
     end,
   },
   -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
